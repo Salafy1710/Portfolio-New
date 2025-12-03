@@ -1,42 +1,64 @@
-#root {
-  max-width: 1280px;
+/* ==================================== */
+/* 1. Variabel Warna Global */
+/* ==================================== */
+:root {
+  --primary-color: #4A90E2; /* Biru */
+  --secondary-color: #F5A623; /* Emas/Kuning */
+  --background-light: #f4f7f9; /* Latar Belakang Putih Kebiruan Muda */
+  --card-background-light: #ffffff; /* Latar Belakang Card Putih */
+  --text-dark: #333333; /* Warna Teks Gelap */
+  --text-light: #6e6e6e; /* Warna Teks Abu-abu */
+  --hero-bg-color: #d1d9e6; /* Abu-abu muda untuk latar Hero */
+  --hero-name-color: #d49d44; /* Emas untuk nama di Hero */
+}
+
+/* ==================================== */
+/* 2. Gaya Dasar (Body & Main Layout) */
+/* ==================================== */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  scroll-behavior: smooth;
+  /* Tambahkan Font Awesome untuk ikon (seperti ikon bulan di Navbar) */
+  /* Pastikan Anda sudah menginstal Font Awesome atau menggunakan CDN */
+}
+
+.app-container {
+    /* Pastikan tinggi minimal untuk aplikasi mengisi seluruh layar */
+    min-height: 100vh;
+}
+
+main {
+  /* Kontainer utama konten agar terpusat di tengah */
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem;
+}
+
+/* ==================================== */
+/* 3. Gaya Judul Section Umum */
+/* ==================================== */
+.section-title {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  font-weight: 600;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* ==================================== */
+/* 4. Media Query Dasar (Responsif) */
+/* ==================================== */
+@media (max-width: 768px) {
+  main {
+    padding: 0 1rem;
   }
-  to {
-    transform: rotate(360deg);
+  .section-title {
+    font-size: 2rem;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

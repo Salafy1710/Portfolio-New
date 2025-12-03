@@ -1,0 +1,34 @@
+.about-section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.about-profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 4px solid var(--primary-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-text {
+  max-width: 600px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+  margin-top: 1rem;
+}
+
+
+.about-text strong {
+  font-weight: 600;
+  color: var(--primary-color);
+}

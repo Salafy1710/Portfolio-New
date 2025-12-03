@@ -1,0 +1,65 @@
+/* Styling untuk komponen Skil (Keahlian) */
+
+.skil-section {
+    padding: 40px 0; /* Padding atas dan bawah */
+    /* Pastikan warna latar belakang sesuai dengan desain utama Anda (putih/abu-abu muda) */
+    background-color: #f7f9fc; 
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600; /* Sedikit tebal */
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Penting agar skill bisa pindah baris pada layar kecil */
+    justify-content: center; /* Memusatkan badge keahlian */
+    gap: 15px; /* Jarak antara setiap badge */
+    max-width: 900px; /* Batasi lebar container */
+    margin: 0 auto; /* Tengah-kan container */
+}
+
+.skill-badge {
+    /* Gaya badge sesuai desain (kotak membulat dengan latar belakang biru muda) */
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px; /* Untuk bentuk pil atau membulat */
+    
+    /* Warna latar belakang dan teks */
+    background-color: #e6f0fa; /* Biru muda */
+    color: #3470cc; /* Biru gelap untuk teks */
+    
+    /* Gaya font */
+    font-size: 0.95rem;
+    font-weight: 500;
+    
+    /* Efek hover opsional */
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: default;
+}
+
+.skill-badge:hover {
+    background-color: #d1e2f7; /* Sedikit lebih gelap saat dihover */
+    transform: translateY(-2px); /* Efek mengangkat sedikit */
+}
+
+/* Sesuaikan jika ada container global Anda, misal class 'container' */
+.container {
+    padding: 0 15px;
+}
+
+/* Media Queries untuk responsivitas jika diperlukan */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .skill-badge {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
